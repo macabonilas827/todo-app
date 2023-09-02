@@ -2,6 +2,9 @@
 export default {
   content: ['./src/**/*.{html,js,ts,jsx,tsx}'],
   theme: {
+    container: {
+      center: true,
+    },
     fontFamily: {
       todo: ['Josefin sans, sans-serif'],
     },
@@ -28,8 +31,8 @@ export default {
       //  'very-dark-grayish-blue': 'hsl(237, 14%, 26%)',
     },
     extend: {
-      backgroundImage: {
-        'mobile-light': "url('/src/assets/images/bg-mobile-light.jpg)",
+      letterSpacing: {
+        widest: '.5em',
       },
     },
   },
