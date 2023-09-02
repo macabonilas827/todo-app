@@ -1,13 +1,19 @@
+import Container from './components/container/Container'
+import { TodoProdiver } from './context/todoContext'
+
+Container
+
 function App() {
   return (
-    <div className="bg-mobile-light h-screen">
-      {/* <div className="">
+    <TodoProdiver>
+      <div className="absolute">
         <img
           src="src/assets/images/bg-mobile-light.jpg"
-          alt="background light theme"
+          alt="background image"
         />
-      </div> */}
-    </div>
+      </div>
+      <Container />
+    </TodoProdiver>
   )
 }
 
