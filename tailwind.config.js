@@ -6,7 +6,7 @@ export default {
       center: true,
     },
     fontFamily: {
-      todo: ['Josefin sans, sans-serif'],
+      todo: ['Josefin Sans, sans-serif'],
     },
     colors: {
       //  Primary
