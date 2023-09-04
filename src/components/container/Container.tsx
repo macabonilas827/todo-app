@@ -1,13 +1,13 @@
 import DisplayTodo from '../display/DisplayTodo'
-import Input from '../input/Input'
+import TodoInput from '../input/TodoInput'
 import Navbar from '../navbar/Navbar'
 
 const Container = () => {
   return (
-    <main className="container absolute p-8">
+    <main className="container absolute p-6 font-todo text-sm">
       <div className="flex flex-col gap-4">
         <Navbar />
-        <Input />
+        <TodoInput />
         <DisplayTodo />
       </div>
     </main>

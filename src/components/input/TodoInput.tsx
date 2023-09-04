@@ -1,18 +1,19 @@
 import { useState, KeyboardEvent } from 'react'
+import { v4 as uuidv4 } from 'uuid'
 import { useTodoContext } from '../../custom-hooks/useTodoContext'
 
-const Input = () => {
+const TodoInput = () => {
   const [inputTodo, setInputTodo] = useState('')
 
   const { dispatch } = useTodoContext()
 
   const handleKeyPress = (event: KeyboardEvent<HTMLInputElement>) => {
-    if (event.key === 'Enter') {
+    if (event.key === 'Enter' || event.key === ('Go' || 'go')) {
       dispatch({
         type: 'ADD_TODO',
         payload: {
           todo: inputTodo,
-          todoId: crypto.randomUUID(),
+          todoId: uuidv4(),
           isCompleted: false,
         },
       })
@@ -23,7 +24,7 @@ const Input = () => {
   return (
     <div>
       <input
-        className="h-12 w-full rounded-md  outline-none"
+        className="w-full rounded-md p-4  outline-none"
         type="text"
         name="todo"
         value={inputTodo}
@@ -34,4 +35,4 @@ const Input = () => {
     </div>
   )
 }
-export default Input
+export default TodoInput
