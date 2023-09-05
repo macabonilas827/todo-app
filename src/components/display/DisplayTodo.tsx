@@ -1,4 +1,5 @@
 import { useTodoContext } from '../../custom-hooks/useTodoContext'
+import CheckBox from './CheckBox'
 
 const DisplayTodo = () => {
   const { todos } = useTodoContext()
@@ -6,6 +7,7 @@ const DisplayTodo = () => {
   const todo = todos.map(({ todo, todoId }) => {
     return (
       <div className="flex justify-between p-4" key={todoId}>
+        <CheckBox />
         <h6>{todo}</h6>
         <div>
           <img

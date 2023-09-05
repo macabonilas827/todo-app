@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .round {
+    @apply relative;
+  }
+  .round label {
+    @apply absolute left-0 top-0 h-7 w-7 cursor-pointer rounded-[50%] border border-solid border-[#ccc] bg-bright-blue after:absolute after:left-[7px] after:top-2 after:h-1.5 after:w-3 after:-rotate-45 after:border-2 after:border-solid after:border-bright-blue after:border-r-[none] after:border-t-[none] after:opacity-0 after:content-[""];
+  }
+  .round input[type='checkbox'] {
+    @apply invisible;
+  }
+  .round input[type='checkbox']:checked + label {
+    @apply border-[#66bb6a] bg-[#66bb6a] after:opacity-100;
+  }
+}
