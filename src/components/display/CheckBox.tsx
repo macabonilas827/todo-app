@@ -1,17 +1,12 @@
 const CheckBox = () => {
   return (
-    <div>
-      <div>
-        <img
-          className="h-10"
-          src="src/assets/images/icon-check.svg"
-          alt="checkbox"
+    <div className="">
+      <label className="inline-flex items-center ">
+        <input
+          type="checkbox"
+          className="text-purple-500  mt-0.5 h-5  w-5 rounded-full  opacity-30  focus:ring-0 focus:ring-offset-0"
         />
-      </div>
-      <div className="round">
-        <input type="checkbox" checked id="checkbox" />
-        <label className="round" htmlFor="checkbox"></label>
-      </div>
+      </label>
     </div>
   )
 }

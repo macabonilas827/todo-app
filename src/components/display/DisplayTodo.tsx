@@ -6,9 +6,11 @@ const DisplayTodo = () => {
 
   const todo = todos.map(({ todo, todoId }) => {
     return (
-      <div className="flex justify-between p-4" key={todoId}>
-        <CheckBox />
-        <h6>{todo}</h6>
+      <div className="flex items-center justify-between p-4" key={todoId}>
+        <div className="flex items-center gap-3">
+          <CheckBox />
+          <h6 className="m-0 p-0">{todo}</h6>
+        </div>
         <div>
           <img
             className="w-3 cursor-pointer "
