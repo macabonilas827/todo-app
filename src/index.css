@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components {
+/* @layer components {
   .round {
     @apply relative;
   }
@@ -15,4 +15,4 @@
   .round input[type='checkbox']:checked + label {
     @apply border-[#66bb6a] bg-[#66bb6a] after:opacity-100;
   }
-}
+} */
