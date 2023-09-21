@@ -8,7 +8,7 @@ const TodoInput = () => {
   const { dispatch } = useTodoContext()
 
   const handleKeyPress = (event: KeyboardEvent<HTMLInputElement>) => {
-    if (event.key === 'Enter' || event.key === ('Go' || 'go')) {
+    if (event.key === 'Enter') {
       dispatch({
         type: 'ADD_TODO',
         payload: {
